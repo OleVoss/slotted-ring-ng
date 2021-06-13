@@ -1,0 +1,94 @@
+$belegt-color: #A1FDD6;
+$monitor-color: #51DED6;
+$quell-color: #F6EF3F;
+$ziel-color: #F6CE3F;
+$daten-color: #8BFD90;
+$antwort-color: #EC5AEF;
+$border-color: #7B2D7C;
+
+.container {
+	display: flex;
+	width: 500px;
+	height: 100px;
+}
+
+.item {
+	box-sizing: border-box;
+	border-right: 3px solid $border-color;
+	border-top: 3px solid $border-color;
+	border-bottom: 3px solid $border-color;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#belegt {
+	width: 65px;
+	height: 50px;
+	background-color: $belegt-color;
+	border-left: 3px solid $border-color;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+#monitor {
+	width: 65px;
+	height: 50px;
+	background-color: $monitor-color;
+}
+
+#quelle {
+	width: 115px;
+	height: 50px;
+	background-color: $quell-color;
+}
+
+#ziel {
+	width: 115px;
+	height: 50px;
+	background-color: $ziel-color;
+}
+
+#daten {
+	width: 115px;
+	height: 50px;
+	background-color: $daten-color;
+}
+
+#antwort1, #antwort2 {
+	width: 50px;
+	height: 50px;
+	background-color: $antwort-color;
+}
+
+#antwort2 {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.state {
+	font-family: Roboto;
+	font-weight: bold;
+	color: #7B2D7C;
+	font-size: 28px;
+}
+
+.bit_block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.label {
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 12px;
+
+	margin-top: 5px;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
